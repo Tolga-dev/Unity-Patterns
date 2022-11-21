@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E1/Scenes/CommandPattern.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E1/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E1/Scripts/Object.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E1/Scripts/Object.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/Scenes/CommandPattern.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Command.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Command.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E1/Scenes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Patterns.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scenes/CommandPattern.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Patterns.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E1/Scenes/CommandPattern.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scenes/CommandPattern.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scenes/CommandPattern.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scripts/CommandE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/CommandE.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlyWieght/E1/Scenes/CommandPattern.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlyWieght/E1/Scenes/CommandPattern.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FlyWieght/E1/Scripts/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlyWieght/E1/Scripts/Tree.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +16,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Command/E2/Scripts/Command.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -46,19 +29,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../Unity/Hub/Editor/2020.3.32f1/Editor/Unity" />
@@ -97,7 +80,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668966109727</updated>
-      <workItem from="1668966115663" duration="6113000" />
+      <workItem from="1668966115663" duration="6407000" />
+      <workItem from="1669022531874" duration="2397000" />
+      <workItem from="1669042441909" duration="3780000" />
+      <workItem from="1669048228200" duration="495000" />
     </task>
     <servers />
   </component>
