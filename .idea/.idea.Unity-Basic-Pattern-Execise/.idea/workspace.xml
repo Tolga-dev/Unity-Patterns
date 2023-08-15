@@ -1,75 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E1/ReadME.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E1/ReadME.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/ReadME.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/ReadME.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Command/README.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scenes/CommandPattern.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scenes/CommandPattern.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scripts/DataLocality.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scripts/DataLocality.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/README.md.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EventQueue.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scenes/CommandPattern.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scenes/CommandPattern.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scripts/Queue.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scripts/Queue.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Observer.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prototype.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Service.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Service/E1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scenes/CommandPattern.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scenes/CommandPattern.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scripts/Service.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scripts/Service.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Singleton.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Enemy.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Enemy.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Friend.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Friend.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scenes/CommandPattern.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scenes/CommandPattern.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Enemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Friendly.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Friendly.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Grid.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Grid.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Soldier.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Soldier.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/_GameController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/_GameController.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/E1/Scripts/SeriousAnotherExampple.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/E1/Scripts/SeriousAnotherExampple/State5.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/State/E1/Scripts/SeriousAnotherExampple/State5.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectSettings/MemorySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Command/E1/Scripts/Object.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E1/Scripts/Object.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scripts/CommandE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/CommandE.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-    </list>
+    <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,7 +9,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scripts/DataLocality.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DataLocality/E1/Scripts/DataLocality.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EventQueue/E1/Scripts/Queue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Service/E1/Scripts/Service.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Signleton.cs" root0="FORCE_HIGHLIGHTING" />
@@ -174,7 +106,7 @@
       <workItem from="1670950467239" duration="3068000" />
       <workItem from="1670953977677" duration="234000" />
       <workItem from="1672038481981" duration="2673000" />
-      <workItem from="1692133868177" duration="958000" />
+      <workItem from="1692133868177" duration="1267000" />
     </task>
     <servers />
   </component>
