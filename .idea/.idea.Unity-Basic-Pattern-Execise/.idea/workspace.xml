@@ -2,13 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Command/E1/ReadME.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Command/E1/ReadME.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/ReadME.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Command/E2/ReadME.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Command/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Command/README.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scenes/CommandPattern.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scenes/CommandPattern.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scripts/DataLocality.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scripts/DataLocality.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/DataLocality/README.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EventQueue.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scenes/CommandPattern.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scenes/CommandPattern.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scripts/Queue.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/EventQueue/E1/Scripts/Queue.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Observer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prototype.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Service.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Service/E1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scenes/CommandPattern.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scenes/CommandPattern.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scripts/Service.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Service/E1/Scripts/Service.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Singleton.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Enemy.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Enemy.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Friend.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Friend.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scenes/CommandPattern.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scenes/CommandPattern.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Enemy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Enemy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Friendly.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Friendly.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Grid.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Grid.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Soldier.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/Soldier.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/_GameController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/SpatialPartition/E1/Scripts/_GameController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/State.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/State/E1/Scripts/SeriousAnotherExampple.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/State/E1/Scripts/SeriousAnotherExampple/State5.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/State/E1/Scripts/SeriousAnotherExampple/State5.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectSettings/MemorySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scenes/CommandPattern.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scenes/CommandPattern.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Command/E1/Scripts/Object.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E1/Scripts/Object.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scripts/CommandE.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/CommandE.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlyWieght/E1/Scenes/CommandPattern.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlyWieght/E1/Scenes/CommandPattern.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FlyWieght/E1/Scripts/Tree.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/FlyWieght/E1/Scripts/Tree.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +77,21 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/DataLocality/E1GameObject-based Approach/Scripts/DataLocality.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/EventQueue/E1/Scripts/Queue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Service/E1/Scripts/Service.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Signleton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/State/E1/Scripts/SeriousAnotherExampple/State5.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/State/E1/Scripts/State.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/State/E1/Scripts/State2.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/State/E1/Scripts/State3.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/992585620d64427198ddf3a0e146773313e400/bc/5db43fc6/Action.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="SWEA" />
   </component>
   <component name="ProjectId" id="2HozDWTj5oBjSkPMggP75pxnP1T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -38,13 +110,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.5625&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/xamblot/Unity-Basic-Pattern-Execise/Assets/EventQueue&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;two.files.diff.last.used.folder&quot;: &quot;/home/xamblot/Unity-Basic-Pattern-Execise/Assets/EventQueue&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="$PROJECT_DIR$/../Unity/Hub/Editor/2020.3.32f1/Editor/Unity" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../Unity/Hub/Editor/2022.3.5f1/Editor/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -84,6 +159,22 @@
       <workItem from="1669022531874" duration="2397000" />
       <workItem from="1669042441909" duration="3780000" />
       <workItem from="1669048228200" duration="495000" />
+      <workItem from="1669532542867" duration="24698000" />
+      <workItem from="1669995488572" duration="7390000" />
+      <workItem from="1670055275770" duration="7723000" />
+      <workItem from="1670065028853" duration="12423000" />
+      <workItem from="1670086066967" duration="5727000" />
+      <workItem from="1670092084296" duration="103000" />
+      <workItem from="1670583951184" duration="492000" />
+      <workItem from="1670584465424" duration="784000" />
+      <workItem from="1670597427716" duration="1066000" />
+      <workItem from="1670733177308" duration="1476000" />
+      <workItem from="1670747115887" duration="6570000" />
+      <workItem from="1670754484923" duration="4616000" />
+      <workItem from="1670950467239" duration="3068000" />
+      <workItem from="1670953977677" duration="234000" />
+      <workItem from="1672038481981" duration="2673000" />
+      <workItem from="1692133868177" duration="958000" />
     </task>
     <servers />
   </component>

@@ -12,23 +12,23 @@ public interface ICommand
 
 public class Command : ICommand
 {
-    public GameObject gameObject;
-    private string name;
+    public GameObject GameObject;
+    private readonly string _name;
     public Command(GameObject gameObject, string name)
     {
-        this.gameObject = gameObject;
-        this.name = name;
+        this.GameObject = gameObject;
+        this._name = name;
     }
     public void Execute()
     {
-        gameObject.transform.position += Vector3.one;
-        Debug.Log("Execute "  + name );
+        GameObject.transform.position += Vector3.one;
+        Debug.Log("Execute "  + _name );
     }
  
     public void ExecuteUndo()
     {
-        gameObject.transform.position -= Vector3.one;
-        Debug.Log("Undo "  + name);
+        GameObject.transform.position -= Vector3.one;
+        Debug.Log("Undo "  + _name);
     }
 }
 
@@ -36,28 +36,27 @@ public class Object : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject mPlayer;
-    public string name;
-    private ICommand command;
-    private List<ICommand> _commandsBuffer = new List<ICommand>();
-    void Start()
+    public new string name;
+    private ICommand _command;
+    private readonly List<ICommand> _commandsBuffer = new List<ICommand>();
+
+    private void Start()
     {
-        command = new Command(mPlayer, name);
-        command.Execute();
+        _command = new Command(mPlayer, name);
+        _command.Execute();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(ray, out var hit))
             {
                 ICommand newCommand = new Command(hit.collider.gameObject, name);
                 AddCommandToBuffer(newCommand);
                 newCommand.Execute();
-                
             }
                 
         }
@@ -73,7 +72,7 @@ public class Object : MonoBehaviour
         StartCoroutine(UndoRoutine());
     }
 
-    IEnumerator UndoRoutine()
+    private IEnumerator UndoRoutine()
     {
         foreach(var command in Enumerable.Reverse(_commandsBuffer))
         {
@@ -84,7 +83,7 @@ public class Object : MonoBehaviour
         
     }
 
-    void AddCommandToBuffer(ICommand command)
+    private void AddCommandToBuffer(ICommand command)
     {
         _commandsBuffer.Add(command);
     }

@@ -12,7 +12,6 @@ public class Forward : CommandE
 {
     public override void Execute(CommandE command)
     {
-
         Debug.Log("Forward Execute!");
     }
 
