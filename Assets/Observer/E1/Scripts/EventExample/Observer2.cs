@@ -34,16 +34,11 @@ public class Observer2 : MonoBehaviour
     {
         
         AssignableJob += new AssignJob(EngineerEvent);
-        AssignableJob += new AssignJob(BuilderEvent);
+        AssignableJob += new AssignJob(BuilderEvent); 
         AssignableJob.Invoke();
-        
+
     }
 
-    static void DoJob(int id, JobsTypes jobsTypes)
-    {
-        Work?.Invoke(8, JobsTypes.Builder);
-        
-    }
     static void EngineerEvent()
     {
         Debug.Log(JobsTypes.Engineer);
@@ -51,7 +46,7 @@ public class Observer2 : MonoBehaviour
     static void BuilderEvent()
     {
         Debug.Log(JobsTypes.Builder);
-    }
+    } 
 }
 
 public enum JobsTypes

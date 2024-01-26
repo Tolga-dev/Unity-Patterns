@@ -5,8 +5,8 @@ using UnityEngine;
 
 public enum Jobs
 {
-    _nightWatchman,
-    _laborer
+    NightWatchman,
+    Laborer
 }
 
 public interface IWorker  
@@ -23,9 +23,9 @@ public class Worker : IWorker
     {
         Debug.Log(" Work ID " + id);
     }
-    public void DoJOb(IWorker.Work Job)
+    public void DoJOb(IWorker.Work job)
     {
-        Job(15, Jobs._nightWatchman);
+        job(15, Jobs.NightWatchman);
     }
 }
 
@@ -39,7 +39,7 @@ public class Observer : MonoBehaviour
         IWorker.Work workType = new IWorker.Work(_worker.WorkManager);
         
         _worker.DoJOb(workType);
-         workType.Invoke(1, Jobs._laborer);
+         workType.Invoke(1, Jobs.Laborer);
         
     }
     
