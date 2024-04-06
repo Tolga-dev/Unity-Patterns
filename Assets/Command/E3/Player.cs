@@ -1,57 +1,59 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class Player : MonoBehaviour
+namespace Command.E3
 {
-    [SerializeField]
-    public Rigidbody _myRigidBody;
+    public class Player : MonoBehaviour
+    {
+        [SerializeField]
+        public Rigidbody myRigidBody;
     
-    private Transform _myTransform;
-    private float _flVertical;
-    private float _flHorizontal;
-    private float _flRotateMultiplier = 3;
+        private Transform _myTransform;
+        private float _flVertical;
+        private float _flHorizontal;
+        private readonly float _flRotateMultiplier = 3;
     
-    void Awake()
-    {
-        _myTransform = transform;
-        _myRigidBody = GetComponent<Rigidbody>();
-    }
-    void Start()
-    { 
-    }
+        void Awake()
+        {
+            _myTransform = transform;
+            myRigidBody = GetComponent<Rigidbody>();
+        }
+        public void RunForward()
+        {
+            _flHorizontal = 0;
+            _flVertical = 1f;
+            myRigidBody.velocity = _myTransform.forward * _flVertical;
+        }
 
-    public void RunForward()
-    {
-        _flHorizontal = 0;
-        _flVertical = 1f;
-        _myRigidBody.velocity = _myTransform.forward * _flVertical;
-    }
-
-    public void RunBack()
-    {
-        _flHorizontal = 0;
-        _flVertical = -1f;
-        _myRigidBody.velocity = _myTransform.forward * _flVertical;
-    }
-    public void RotateRight()
-    {
-        _flVertical = 0;
-        _flHorizontal = 1f;
-        _myTransform.Rotate(0, _flHorizontal * _flRotateMultiplier, 0);
-    }
+        public void RunBack()
+        {
+            _flHorizontal = 0;
+            _flVertical = -1f;
+            myRigidBody.velocity = _myTransform.forward * _flVertical;
+        }
+        public void RotateRight()
+        {
+            _flVertical = 0;
+            _flHorizontal = 1f;
+            _myTransform.Rotate(0, _flHorizontal * _flRotateMultiplier, 0);
+        }
     
-    public void RotateLeft()
-    {
-        _flVertical = 0;
-        _flHorizontal = -1f;
-        _myTransform.Rotate(0, _flHorizontal * _flRotateMultiplier, 0);
-    }
+        public void RotateLeft()
+        {
+            _flVertical = 0;
+            _flHorizontal = -1f;
+            _myTransform.Rotate(0, _flHorizontal * _flRotateMultiplier, 0);
+        }
 
-    public void Shoot()
-    {
-        // Shooting
-    }
+        public void Jump()
+        {
+            var transform1 = transform;
+            var vector3 = transform1.position;
+            vector3.y = 10;
+            
+            transform1.position = vector3;
+            // Shooting
+        }
 
-    
+    }
 }

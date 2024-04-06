@@ -1,59 +1,48 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ExecuteCommand : MonoBehaviour
-{
-    public Player plObject;
+namespace Command.E3
+{        
 
-    // all commands
-    private IInputCommand up_command;
-    private IInputCommand down_command;
-    private IInputCommand left_command;
-    private IInputCommand right_command;
-    private IInputCommand shoot_command;
-
-    // the shoot rate
-    private float _flShootRate;
-    // flag who indicates if player can do some commands
-    private bool _boolCanMove;
-
-    private void Awake()
+    public class ExecuteCommand : MonoBehaviour
     {
-        up_command = new RunUp_Command();
-        down_command = new RunBack_Command();
-        left_command = new RotateLeft_Command();
-        right_command = new RotateRight_Command();
-        shoot_command = new Shoot_Command();
-        
-        throw new NotImplementedException();
-    }
+        public Player plObject;
 
-    private void Start()
-    {
-        _flShootRate = 10; 
-    }
+        // all commands
+        private IInputCommand _upCommand;
+        private IInputCommand _downCommand;
+        private IInputCommand _leftCommand;
+        private IInputCommand _rightCommand;
+        private IInputCommand _jumpCommand;
 
-    private void Update()
-    {   
-        if (Input.GetKey(KeyCode.UpArrow))
-            up_command.Execute(plObject);
-        else if (Input.GetKey(KeyCode.DownArrow))
-            down_command.Execute(plObject);
-
-        if (Input.GetKey(KeyCode.RightArrow))
-            right_command.Execute(plObject);
-        else if (Input.GetKey(KeyCode.LeftArrow))
-            left_command.Execute(plObject);
-
-        if (Input.GetKey(KeyCode.Space))
+        private void Awake()
         {
-            if (Time.frameCount % _flShootRate == 0)
-                shoot_command.Execute(plObject);
+            _upCommand = new RunUpCommand();
+            _downCommand = new RunBackCommand();
+            _leftCommand = new RotateLeftCommand();
+            _rightCommand = new RotateRightCommand();
+            _jumpCommand = new JumpCommand();
+        }
+
+        private void Update()
+        {   
+            if (Input.GetKey(KeyCode.UpArrow))
+                _upCommand.Execute(plObject);
+            else if (Input.GetKey(KeyCode.DownArrow))
+                _downCommand.Execute(plObject);
+
+            if (Input.GetKey(KeyCode.RightArrow))
+                _rightCommand.Execute(plObject);
+            else if (Input.GetKey(KeyCode.LeftArrow))
+                _leftCommand.Execute(plObject);
+
+            if (Input.GetKey(KeyCode.Space))
+            {
+                _jumpCommand.Execute(plObject);
+            }
+    
         }
         
     
     }
-    
 }

@@ -1,52 +1,48 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public interface IInputCommand
+namespace Command.E3
 {
-  void Execute(Player plObject);
-}
-
-public class RotateRight_Command : IInputCommand
-{
-  public void Execute(Player plObject)
+  public interface IInputCommand
   {
-    plObject.RotateRight();
+    void Execute(Player plObject);
+  }
+
+  public class RotateRightCommand : IInputCommand
+  {
+    public void Execute(Player plObject)
+    {
+      plObject.RotateRight();
+    }
+    
+  }
+
+  public class RotateLeftCommand : IInputCommand
+  {
+    public void Execute(Player plObject)
+    {
+      plObject.RotateLeft();
+    }
+  }
+
+  public class RunUpCommand : IInputCommand
+  {
+    public void Execute(Player plObject)
+    {
+      plObject.RunForward();
+    }
+  }
+
+  public class RunBackCommand : IInputCommand
+  {
+    public void Execute(Player plObject)
+    {
+      plObject.RunBack();
+    }
+  }
+
+  public class JumpCommand : IInputCommand
+  {
+    public void Execute(Player plObject)
+    {
+      plObject.Jump();
+    }
   }
 }
-
-public class RotateLeft_Command : IInputCommand
-{
-  public void Execute(Player plObject)
-  {
-    plObject.RotateLeft();
-  }
-}
-
-public class RunUp_Command : IInputCommand
-{
-  public void Execute(Player plObject)
-  {
-    plObject.RunForward();
-  }
-}
-
-public class RunBack_Command : IInputCommand
-{
-  public void Execute(Player plObject)
-  {
-    plObject.RunBack();
-  }
-}
-
-public class Shoot_Command : IInputCommand
-{
-  public void Execute(Player plObject)
-  {
-    plObject.Shoot();
-  }
-}
-
-
-
-
