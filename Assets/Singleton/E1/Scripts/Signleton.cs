@@ -11,14 +11,12 @@ public class Signleton : MonoBehaviour
     { 
         NotSafe();
     }
- 
     private void Singleton()
     {
         threadSafetyNotLazy.Singleton instance = threadSafetyNotLazy.Singleton.Instance;
         
         instance.Init();
         threadSafetyNotLazy.Singleton instances = threadSafetyNotLazy.Singleton.Instance;
-        
         instances.Init();
     }
 
@@ -30,7 +28,7 @@ public class Signleton : MonoBehaviour
         instance2.Init();
         
     }
- 
+    
 }
 
 namespace LazyImplementation2 
