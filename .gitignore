@@ -6,7 +6,7 @@
 .idea/
 Assets/Plugins/Editor/JetBrains*
 Logs
-
+ProjectSettings
 # Visual Studio Code
 .vscode/
 *.meta
