@@ -5,11 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Basic-Pattern-Execise/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/State/E2/CommandPattern.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/State/E2/CommandPattern.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Factory/E1/click.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/E1/Pool.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/E1/Spawner.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/E1/output.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/E1/test.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/pool.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Singleton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Singleton/Singleton.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Factory/factory.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Factory/factory.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Signleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Signleton.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +174,7 @@
       <workItem from="1692135518699" duration="388000" />
       <workItem from="1706290494435" duration="4559000" />
       <workItem from="1706295968270" duration="615000" />
-      <workItem from="1712396360335" duration="218000" />
+      <workItem from="1712396360335" duration="11457000" />
     </task>
     <servers />
   </component>

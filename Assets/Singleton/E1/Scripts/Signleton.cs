@@ -9,7 +9,6 @@ public class Signleton : MonoBehaviour
 {
     void Start()
     { 
-        
         NotSafe();
     }
  
