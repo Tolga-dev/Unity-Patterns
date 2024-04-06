@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class State2 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private INpc currentState;
+    private INpc _currentState;
     public readonly WanderState WanderState = new WanderState();
+    
     void Start()
     {
-        currentState = WanderState;
+        _currentState = WanderState;
     }
 
     // Update is called once per frame
     void Update()
     {
-        currentState.ActionState(this);
+        _currentState.ActionState(this);
     }
 }
 
@@ -28,9 +28,6 @@ public class WanderState : INpc
 {
     public INpc ActionState(State2 npc)
     {
-        // if else switch;
         return npc.WanderState;
     }
- 
-
 }

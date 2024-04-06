@@ -60,11 +60,11 @@ namespace Enemies
 {
     public class Zombie : EnemyBase.EnemyBase
     {
-        private States _states = States.Walk;
+        private readonly States _states = States.Walk;
 
-        public Zombie(GameObject Enemy)
+        public Zombie(GameObject enemy)
         {
-            base.Enemy = Enemy;
+            base.Enemy = enemy;
         }
 
         public override void UpdateStatus()
