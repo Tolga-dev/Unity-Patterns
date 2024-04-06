@@ -1,21 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System;
+using UnityEngine;
 
-public class Health : MonoBehaviour
+namespace Observer.E1.Scripts.ObserverExample
 {
-    public static event Action TakeHealth;
-    public static event Action TakeSlowness;
-
-    private void Update()
+    public class Health : MonoBehaviour
     {
-        if (Input.GetKeyDown(KeyCode.A))
+        public static event Action TakeHealth;
+        public static event Action TakeSlowness;
+
+        private void Update()
         {
-            TakeHealth?.Invoke();
-            TakeSlowness?.Invoke();
-            Debug.Log("A");
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                TakeHealth?.Invoke();
+                TakeSlowness?.Invoke();
+                Debug.Log("A");
+            }
         }
-    }
     
+    }
 }
