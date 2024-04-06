@@ -1,91 +1,56 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public interface ICommand
+namespace Command.E1.Scripts
 {
-    public void Execute();
-    public void ExecuteUndo();
-}
-
-public class Command : ICommand
-{
-    public GameObject GameObject;
-    private readonly string _name;
-    public Command(GameObject gameObject, string name)
+    public class Object : MonoBehaviour
     {
-        this.GameObject = gameObject;
-        this._name = name;
-    }
-    public void Execute()
-    {
-        GameObject.transform.position += Vector3.one;
-        Debug.Log("Execute "  + _name );
-    }
- 
-    public void ExecuteUndo()
-    {
-        GameObject.transform.position -= Vector3.one;
-        Debug.Log("Undo "  + _name);
-    }
-}
-
-public class Object : MonoBehaviour
-{
-    // Start is called before the first frame update
-    public GameObject mPlayer;
-    public new string name;
-    private ICommand _command;
-    private readonly List<ICommand> _commandsBuffer = new List<ICommand>();
-
-    private void Start()
-    {
-        _command = new Command(mPlayer, name);
-        _command.Execute();
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Mouse0))
+        private ICommand _command;
+        private readonly List<ICommand> _commandsBuffer = new List<ICommand>();
+        
+        private void Update()
         {
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-            if (Physics.Raycast(ray, out var hit))
+            if (Input.GetKeyDown(KeyCode.Mouse0))
             {
-                ICommand newCommand = new Command(hit.collider.gameObject, name);
-                AddCommandToBuffer(newCommand);
-                newCommand.Execute();
+                if (Physics.Raycast(Camera.main!.ScreenPointToRay(Input.mousePosition), out var hit))
+                {
+                    var o = hit.collider.gameObject;
+                    AddCommandToBuffer(new Command(o, o.name));
+                }
             }
-                
+            else if (Input.GetKey(KeyCode.R))
+            {
+                Undo();
+            }
+            
         }
 
-        if (Input.GetKeyDown(KeyCode.R) )
+        private void Undo()
         {
-            Undo();
+            UndoRoutine();
         }
-    }
 
-    private void Undo()
-    {
-        StartCoroutine(UndoRoutine());
-    }
-
-    private IEnumerator UndoRoutine()
-    {
-        foreach(var command in Enumerable.Reverse(_commandsBuffer))
+        private void UndoRoutine()
         {
+            if (_commandsBuffer.Count == 0)
+                return;
+            
+            var command = _commandsBuffer[^1];
+
             command.ExecuteUndo();
             _commandsBuffer.Remove(command);
-            yield return new WaitForSeconds(1.0f);
+
         }
-        
-    }
 
-    private void AddCommandToBuffer(ICommand command)
-    {
-        _commandsBuffer.Add(command);
-    }
+        private void AddCommandToBuffer(ICommand command)
+        {
+            Debug.Log("Command added");
+            command.Execute();
+            _commandsBuffer.Add(command);
 
+        }
+
+    }
 }

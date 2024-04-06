@@ -14,7 +14,12 @@ useful in some scenarios.
 * Introduces a global state that can be hard to manage in complex projects.
 ### Alternatives:
 
-
+* E1
+  * Just singleton
+* E2
+  * Singleton of component
+* E3
+  * Singleton of generic
 ```csharp
 public class GameManager : MonoBehaviour
 {
