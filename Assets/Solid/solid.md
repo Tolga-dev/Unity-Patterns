@@ -7,6 +7,9 @@
 * Dependency Inversion Principle
 
 
+* E1 folder is SRP
+
+
 
 #### SRP
 If you have a class that has more than one responsibilities that are not related with each other,

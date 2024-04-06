@@ -18,7 +18,12 @@ namespace Solid.E1
 
         private void Update()
         {
-            playerMovement.SetInput(playerInput.GetInput());
+            if(playerInput.GetInput() != Vector3.zero)
+                playerMovement.SetInput(playerInput.GetInput());
+            else if(playerInput.IsJump())
+                playerMovement.SetJump();
+
+            
         }
     }
 }
