@@ -1,21 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Soldier
+namespace SpatialPartition.E1.Scripts
 {
-    public Transform SoldierTransform;
+    public class Soldier
+    {
+        public Transform SoldierTransform;
 
-    public float WalkSpeed;
+        public float WalkSpeed;
 
-    public Soldier NextSoldier;
-    public Soldier PrevSoldier;
+        public Soldier NextSoldier;
+        public Soldier PrevSoldier;
     
-    public virtual void Move() {}
-    public virtual void Move(Soldier soldier) {}
+        public virtual void Move() {}
+        public virtual void Move(Soldier soldier) {}
     
     
     
 
+    }
 }
 

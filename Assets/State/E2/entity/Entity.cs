@@ -1,7 +1,11 @@
+using State.E2.states.stateMachine;
 using UnityEngine;
 
-public class Entity : MonoBehaviour
+namespace State.E2.entity
 {
-    public bool IsGrounded = false;
-    public stateMachine StateMachine;
+    public class Entity : MonoBehaviour
+    {
+        public bool IsGrounded = false;
+        public stateMachine StateMachine;
+    }
 }

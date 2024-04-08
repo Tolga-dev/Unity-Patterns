@@ -1,21 +1,22 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Friendly : Soldier
+namespace SpatialPartition.E1.Scripts
 {
-    public Friendly(GameObject soldierObj, float mapWidth)
+    public class Friendly : Soldier
     {
-        this.SoldierTransform = soldierObj.transform;
+        public Friendly(GameObject soldierObj, float mapWidth)
+        {
+            this.SoldierTransform = soldierObj.transform;
 
-        this.WalkSpeed = 2f;
-    }
+            this.WalkSpeed = 2f;
+        }
 
-    public override void Move(Soldier soldier)
-    {
-        SoldierTransform.rotation = Quaternion.LookRotation(soldier.SoldierTransform.position - SoldierTransform.position);
+        public override void Move(Soldier soldier)
+        {
+            SoldierTransform.rotation = Quaternion.LookRotation(soldier.SoldierTransform.position - SoldierTransform.position);
         
-        SoldierTransform.Translate(Vector3.forward * Time.deltaTime * WalkSpeed);
-        base.Move();
+            SoldierTransform.Translate(Vector3.forward * Time.deltaTime * WalkSpeed);
+            base.Move();
+        }
     }
 }

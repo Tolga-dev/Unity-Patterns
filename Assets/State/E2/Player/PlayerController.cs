@@ -1,16 +1,20 @@
-using System;
+using State.E2.entity;
 using UnityEngine;
-public class PlayerController : MonoBehaviour
+
+namespace State.E2.Player
 {
-    public Player2 Player2;
-
-    private void Start()
+    public class PlayerController : MonoBehaviour
     {
-        Player2.StateMachine.Init(Player2.StateMachine.Idle);
-    }
+        public Player2 Player2;
 
-    private void Update()
-    {
-        Player2.StateMachine.Update();
+        private void Start()
+        {
+            Player2.StateMachine.Init(Player2.StateMachine.Idle);
+        }
+
+        private void Update()
+        {
+            Player2.StateMachine.Update();
+        }
     }
 }

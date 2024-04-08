@@ -1,53 +1,54 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DataLocality : MonoBehaviour
+namespace DataLocality.E1.Scripts
 {
-    // Start is called before the first frame update
-    private readonly List<GameEntity> _entities = new List<GameEntity>();
-
-    private void Start()
+    public class DataLocality : MonoBehaviour
     {
-        var component = new Component();
-        _entities.Add(new GameEntity(component));
-        _entities.Add(new GameEntity(component));
-        _entities.Add(new GameEntity(component));
-        _entities.Add(new GameEntity(component));
-        
-    }
+        // Start is called before the first frame update
+        private readonly List<GameEntity> _entities = new List<GameEntity>();
 
-    // Update is called once per frame
-    private void Update()
-    {
-        for (var i = 0; i < 10; i++)
+        private void Start()
         {
-            _entities[i].component.Update();
+            var component = new Component();
+            _entities.Add(new GameEntity(component));
+            _entities.Add(new GameEntity(component));
+            _entities.Add(new GameEntity(component));
+            _entities.Add(new GameEntity(component));
+        
+        }
+
+        // Update is called once per frame
+        private void Update()
+        {
+            for (var i = 0; i < 10; i++)
+            {
+                _entities[i].component.Update();
+            }
         }
     }
-}
 
-public class Component
-{
-    public void Update()
+    public class Component
     {
+        public void Update()
+        {
         
-    }
-};
+        }
+    };
 
-public class GameEntity
-{
-    public Component component;
-
-    public GameEntity(Component component)
+    public class GameEntity
     {
-        this.component = component;
-    }
+        public Component component;
 
-    public Component Component()
-    {
-        return component; 
-    }
+        public GameEntity(Component component)
+        {
+            this.component = component;
+        }
 
+        public Component Component()
+        {
+            return component; 
+        }
+
+    }
 }
-

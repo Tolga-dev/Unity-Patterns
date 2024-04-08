@@ -1,48 +1,36 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using AnimalBase;
-using EnemyBase;
-using SpawnBase;
 using UnityEngine;
 
-public class Prototype : MonoBehaviour
+namespace E1.Scripts
 {
-    private AnimalBase.Sheep _animal_sheep;
-    private EnemyBase.Ghost _enemy_ghost;
-    private readonly KeyCode _keyCodeInput;
+    public class Prototype : MonoBehaviour
+    {
+        private Sheep _animalSheep;
+        private Ghost _enemyGhost;
+        private readonly KeyCode _keyCodeInput;
     
-    private void Start()
-    {
-        _animal_sheep = new Sheep(100,10);
-        _enemy_ghost = new Ghost(100,10);
-    }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
+        private void Start()
         {
-            AnimalSpawner _sheepSpawner = new AnimalSpawner(_animal_sheep);
-            
-            Sheep newSheep = _sheepSpawner.AnimalSpawnTime() as Sheep;
-            
-            newSheep.Instruction();
-            
+            _animalSheep = new Sheep(100,10);
+            _enemyGhost = new Ghost(100,10);
         }
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            EnemySpawner _ghostSpawner = new EnemySpawner(_enemy_ghost);
-            
-            Ghost newGhost = _ghostSpawner.EnemySpawnTime() as Ghost;
-            
-            newGhost.Instruction();
-    
-        } 
-    }
-}
 
-namespace AnimalBase
-{
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                var sheepSpawner = new AnimalSpawner(_animalSheep);
+                var newSheep = sheepSpawner.AnimalSpawnTime() as Sheep;
+                newSheep!.Instruction();
+            
+            }
+            else if (Input.GetKeyDown(KeyCode.B))
+            {
+                var ghostSpawner = new EnemySpawner(_enemyGhost);
+                var newGhost = ghostSpawner.EnemySpawnTime() as Ghost;
+                newGhost!.Instruction();
+            } 
+        }
+    }
 
     public abstract class Animal
     {
@@ -70,11 +58,8 @@ namespace AnimalBase
         {
             Debug.Log("Sheep: Message!");
         }
-    }    
-}
+    }
 
-namespace EnemyBase
-{
     public abstract class Enemy
     {
         public abstract Enemy Clone();
@@ -102,19 +87,17 @@ namespace EnemyBase
             return new Ghost(_AttackPower, _Health);
         }
     }
-}
-namespace SpawnBase
-{
+
     public class AnimalSpawner
     {
-        private AnimalBase.Animal _animal;
+        private readonly Animal _animal;
 
-        public AnimalSpawner(AnimalBase.Animal animal)
+        public AnimalSpawner(Animal animal)
         {
             this._animal = animal;
         }
 
-        public AnimalBase.Animal AnimalSpawnTime()
+        public Animal AnimalSpawnTime()
         {
             return _animal.Clone();
         }
@@ -122,17 +105,16 @@ namespace SpawnBase
 
     public class EnemySpawner
     {
-        private EnemyBase.Enemy _enemy;
+        private Enemy _enemy;
 
-        public EnemySpawner(EnemyBase.Enemy animal)
+        public EnemySpawner(Enemy animal)
         {
             this._enemy = animal;
         }
 
-        public EnemyBase.Enemy EnemySpawnTime()
+        public Enemy EnemySpawnTime()
         {
             return _enemy.Clone();
         }
     }
-
 }
