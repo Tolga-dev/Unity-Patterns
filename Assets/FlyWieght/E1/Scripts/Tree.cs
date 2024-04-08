@@ -1,43 +1,57 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
-public class SubTree
+namespace FlyWieght.E1.Scripts
 {
-    public List<Vector3> LeafPosition;
-}
+    public class SubTree
+    {
+        public List<Vector3> LeafPosition;
+    }
  
-public class Tree : MonoBehaviour
-{
-    SubTree Stree;
-    public List<SubTree> AllTrees = new List<SubTree>();
-    
-    public int DensityOfLeaf;
-    public int PosLeaf;
-    
-    void Start()
+    public class Tree : MonoBehaviour
     {
-        Stree = new SubTree();
-        Stree.LeafPosition = GetLeafsPosition();
-        
-        for (int i = 0; i < DensityOfLeaf; i++)
-        {
-            SubTree tree = new SubTree();
-            tree.LeafPosition = Stree.LeafPosition;
-        }
-    }
+        private SubTree _subtree;
+        private readonly List<SubTree> _allTrees = new List<SubTree>();
     
-    List<Vector3> GetLeafsPosition()
-    {
-        List<Vector3> LeafsPos = new List<Vector3>();
+        public int densityOfLeaf;
+        public int posLeaf;
 
-        for (int i = 0; i < PosLeaf; i++)
+        public void Start()
         {
-            LeafsPos.Add(new Vector3());
+            var leafPosition = GetLeafsPosition();
+
+            for (int i = 0; i < densityOfLeaf; i++)
+            {
+                var tree = new SubTree
+                {
+                    LeafPosition = leafPosition
+                };
+                _allTrees.Add(tree);
+            }
+            
         }
 
-        return LeafsPos;
-    }
+        private void GetTree()
+        {
+            foreach (var tree in _allTrees)
+            {
+                Debug.Log(tree.LeafPosition.Count);
+            }
+        }
+
+        private List<Vector3> GetLeafsPosition()
+        {
+            var leafsPos = new List<Vector3>();
+
+            for (int i = 0; i < posLeaf; i++)
+            {
+                leafsPos.Add(new Vector3());
+            }
+
+            return leafsPos;
+        }
     
 
+    }
 }

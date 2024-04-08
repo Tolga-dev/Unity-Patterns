@@ -1,20 +1,21 @@
-using UnityEngine;
-
-public interface IState
+namespace State.E2.states.stateMachine
 {
-    public void Enter()
+    public interface IState
     {
+        public void Enter()
+        {
         
-    }
+        }
 
-    public void Update()
-    {
+        public void Update()
+        {
         
-    }
+        }
 
-    public void Exit()
-    {
+        public void Exit()
+        {
         
-    }
+        }
     
+    }
 }

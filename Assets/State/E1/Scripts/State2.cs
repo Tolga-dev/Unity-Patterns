@@ -1,33 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class State2 : MonoBehaviour
+namespace State.E1.Scripts
 {
-    private INpc _currentState;
-    public readonly WanderState WanderState = new WanderState();
+    public class State2 : MonoBehaviour
+    {
+        private INpc _currentState;
+        public readonly WanderState WanderState = new WanderState();
     
-    void Start()
-    {
-        _currentState = WanderState;
+        void Start()
+        {
+            _currentState = WanderState;
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            _currentState.ActionState(this);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public interface INpc
     {
-        _currentState.ActionState(this);
+        INpc ActionState(State2 npc);
     }
-}
 
-public interface INpc
-{
-    INpc ActionState(State2 npc);
-}
-
-public class WanderState : INpc
-{
-    public INpc ActionState(State2 npc)
+    public class WanderState : INpc
     {
-        return npc.WanderState;
+        public INpc ActionState(State2 npc)
+        {
+            return npc.WanderState;
+        }
     }
 }

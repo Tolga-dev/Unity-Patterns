@@ -1,98 +1,96 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Video;
 
-
-
-public class Service : MonoBehaviour
+namespace Service.E1.Scripts
 {
-    private AudioManager _audioManager;
-    private void Start()
+    public class Service : MonoBehaviour
     {
-        ConsoleAudio consoleAudio = new ConsoleAudio();
+        private AudioManager _audioManager;
+        private void Start()
+        {
+            ConsoleAudio consoleAudio = new ConsoleAudio();
 
-         Locator.Provide(consoleAudio);
+            Locator.Provide(consoleAudio);
          
+        }
+
+        private void Update()
+        {
+            _audioManager = Locator.GetAudioManager();
+
+            StartCoroutine(StartLappedSong());
+
+        }
+
+        private IEnumerator StartLappedSong()
+        {
+            yield return new WaitForSeconds(2);
+            _audioManager.ExecuteSound(1);
+        }
     }
 
-    private void Update()
+    public abstract class AudioManager
     {
-        _audioManager = Locator.GetAudioManager();
-
-        StartCoroutine(StartLappedSong());
-
-    }
-
-    private IEnumerator StartLappedSong()
-    {
-        yield return new WaitForSeconds(2);
-        _audioManager.ExecuteSound(1);
-    }
-}
-
-public abstract class AudioManager
-{
-    public abstract AudioManager _audioBehaviour();
+        public abstract AudioManager _audioBehaviour();
     
-    public abstract void ExecuteSound(int soundID);
+        public abstract void ExecuteSound(int soundID);
     
-    public abstract void StopSound(int soundID);
+        public abstract void StopSound(int soundID);
     
-}
-
-public class ConsoleAudio : AudioManager
-{
-    public override AudioManager _audioBehaviour()
-    {
-        return this;
     }
 
-    public override void ExecuteSound(int soundID)
+    public class ConsoleAudio : AudioManager
     {
-        return;
+        public override AudioManager _audioBehaviour()
+        {
+            return this;
+        }
+
+        public override void ExecuteSound(int soundID)
+        {
+            return;
+        }
+
+        public override void StopSound(int soundID)
+        {
+            return;
+        }
+
     }
 
-    public override void StopSound(int soundID)
+    public class NullAudioManager : AudioManager
     {
-        return;
-    }
+        public override AudioManager _audioBehaviour()
+        {
+            return this;
+        }
 
-}
+        public override void ExecuteSound(int soundID)
+        {
+        }
 
-public class NullAudioManager : AudioManager
-{
-    public override AudioManager _audioBehaviour()
-    {
-        return this;
+        public override void StopSound(int soundID)
+        {
+        }
     }
+    public class Locator
+    {
+        private static AudioManager _service;
+        static NullAudioManager _nullAudioManager;
 
-    public override void ExecuteSound(int soundID)
-    {
-    }
+        static Locator()
+        {
+            _nullAudioManager = new NullAudioManager();
+        }
 
-    public override void StopSound(int soundID)
-    {
-    }
-}
-public class Locator
-{
-    private static AudioManager _service;
-    static NullAudioManager _nullAudioManager;
-
-    static Locator()
-    {
-        _nullAudioManager = new NullAudioManager();
-    }
-
-    public static void Provide(AudioManager service)
-    {
-        if (service == null) _service = service;
-        else _service = service;
-    }
-    public static AudioManager GetAudioManager()
-    {
-        return _service;
+        public static void Provide(AudioManager service)
+        {
+            if (service == null) _service = service;
+            else _service = service;
+        }
+        public static AudioManager GetAudioManager()
+        {
+            return _service;
+        }
     }
 }

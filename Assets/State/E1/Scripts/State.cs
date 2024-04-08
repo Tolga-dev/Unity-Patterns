@@ -1,28 +1,25 @@
-using System.Collections;
-using System.Collections.Generic;
-using Enemies;
 using UnityEngine;
 
-public class State : MonoBehaviour
+namespace State.E1.Scripts
 {
-    // Start is called before the first frame update
-    public GameObject zombieObj;
-    private Zombie _zombie;
-    void Start()
+    public class State : MonoBehaviour
     {
-        _zombie = new Zombie(zombieObj);
-    }
+        // Start is called before the first frame update
+        public GameObject zombieObj;
+        private Zombie _zombie;
+        void Start()
+        {
+            _zombie = new Zombie(zombieObj);
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        _zombie.UpdateStatus();
+        // Update is called once per frame
+        void Update()
+        {
+            _zombie.UpdateStatus();
         
+        }
     }
-}
 
-namespace EnemyBase
-{
     public class EnemyBase
     {
         protected GameObject Enemy;
@@ -54,11 +51,8 @@ namespace EnemyBase
         }
 
     }
-}
 
-namespace Enemies
-{
-    public class Zombie : EnemyBase.EnemyBase
+    public class Zombie : EnemyBase
     {
         private readonly States _states = States.Walk;
 
