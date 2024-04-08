@@ -84,3 +84,12 @@ public Text healthText;
     }
 }
 ```
+
+### Event Handling 
+
+```csharp
+/// <summary><para>Represents the method that will handle an event that has no event data.</para></summary>
+/// <param name="sender">The object that raised the event.</param>
+public delegate void EventHandler(object sender, EventArgs e);
+```
+

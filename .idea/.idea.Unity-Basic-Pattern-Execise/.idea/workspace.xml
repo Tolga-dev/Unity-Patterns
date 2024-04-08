@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Factory/E1/click.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/E1/Pool.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/E1/Spawner.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/E1/output.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/E1/test.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/ObjectPool/pool.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Singleton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Singleton/Singleton.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Factory/factory.md" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Factory/factory.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Signleton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Signleton.cs.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,13 +16,12 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Command/E2/Scripts/Movement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Command/E3/ExecuteCommand.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Command/E3/IInputCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Command/E3/Player.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Command/E3/IInputCommand.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Command/E3/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/DataLocality/E1/Scripts/DataLocality.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/EventQueue/E1/Scripts/Queue.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Service/E1/Scripts/Service.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Singleton/E1/Scripts/Signleton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/State/E1/Scripts/SeriousAnotherExampple/State5.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/State/E1/Scripts/State.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/State/E1/Scripts/State2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/State/E1/Scripts/State3.cs" root0="FORCE_HIGHLIGHTING" />
@@ -79,7 +66,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "XThreadsFramesViewSplitterKey": "0.5625",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "Force",
     "last_opened_file_path": "/home/xamblot/CommandPattern",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -174,7 +161,7 @@
       <workItem from="1692135518699" duration="388000" />
       <workItem from="1706290494435" duration="4559000" />
       <workItem from="1706295968270" duration="615000" />
-      <workItem from="1712396360335" duration="11457000" />
+      <workItem from="1712396360335" duration="22583000" />
     </task>
     <servers />
   </component>
