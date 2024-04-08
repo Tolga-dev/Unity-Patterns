@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj.DotSettings" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Prototype/prototype.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Observer/E2/Scenes/Observer.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Observer/E2/Scripts/Observer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prototype/E1/Scripts/Prototype.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prototype/E1/Scripts/Prototype.cs" afterDir="false" />
-    </list>
+    <list default="true" id="6a91fc77-99ec-4da8-81ee-45629e3bcae4" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -172,6 +166,7 @@
       <workItem from="1706295968270" duration="615000" />
       <workItem from="1712396360335" duration="22583000" />
       <workItem from="1712562801437" duration="12917000" />
+      <workItem from="1712607617250" duration="468000" />
     </task>
     <servers />
   </component>
